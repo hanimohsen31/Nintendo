@@ -1,0 +1,50 @@
+// Variables
+$color1: #e60012;
+$color2: #434242;
+$color3: #0b2b6b;
+$color4: #d6f0fa;
+$color5: #efefef;
+$color6: #ffffff; 
+$color7: #dadada; 
+
+// reset
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box ;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+  }
+ul {
+    list-style: none;
+}
+
+// media querires
+$mobile : 576px ;
+$medium : 768px ;
+$large : 992px ;
+$xlarge : 1200px  ;
+$xxlarge : 1400px ;
+
+// clasess
+
+%flexrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+%flexcol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,50 @@
+@import '../helpers/global';
+.slider{
+    .containerw{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .backer {
+                        height: fit-content;
+                        opacity: 0;
+                        z-index: -1;
+                    }
+                    .carousel-caption{
+                        @extend %flexrow;
+                        justify-content: space-between;
+                        .box {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0 25px;
+                            a.box-img{
+                                img {
+                                    border-radius: 10px;
+                                }
+                            }
+                            .text-content {
+                                text-align: left;
+                                color: $color2;
+                                a.ava {
+                                    &:hover{
+                                        text-decoration: none !important;
+                                    }
+                                    h3 {
+                                        color: $color2;
+                                        text-decoration: none;
+                                        margin: 15px 5px;
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                a{
+                    width: 5%;
+                }
+
+            }
+        }
+    }
+}

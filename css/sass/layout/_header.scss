@@ -1,0 +1,105 @@
+.navigation {
+    nav.navbar {
+        border-bottom: 1px solid $color7;
+        margin: 0;
+        padding: 0;
+        a.navbar-brand{
+            margin: 0;
+            padding: 0;
+        }
+        form.form-inline {
+            max-width: 400px;
+            width: 100%;
+            @extend %flexrow;
+            position: relative;
+            margin: 0 10px;
+            i.fa-search{
+                position: absolute;
+                left: 0;
+            }
+            input.form-control {
+                padding-left: 20px;
+                border: none;
+                border-bottom: 1px solid $color1;
+                border-radius: 0;
+                width: 100% !important;
+                &:focus {
+                    outline-style: none;
+                    box-shadow: none;
+                }
+            }
+        }
+        ul.navbar-nav {
+            color: $color2;
+            padding: 0 1%;
+            li.nav-item{
+                color: $color2;
+                @extend %flexrow;
+                a.nav-link{
+                    font-weight: 800;
+                    font-size: 14px;
+                    i{
+                        font-size: 15px;
+                        margin: 0px 5px; 
+                        color: $color2;
+                    }
+                }
+            }
+        }
+    }
+    .container-secondary{
+        ul.secondary {
+            @extend %flexrow;
+            @media(max-width:$medium){
+                font-size: 10px;
+                text-align: center;
+            }
+            li{
+                margin: 0 10px;
+                @media(max-width:$medium){
+                    margin: 0;
+                }
+                i{
+                    margin: 0 5px;
+                    font-size: 15px;
+                    color: $color2;
+                }
+                span{
+                    color: $color2;
+                    font-weight: bold;
+                    font-size: 14px; 
+                }
+                .fa-chevron-down{
+                    @media(max-width:$medium){
+                        display: none;
+                    }
+                }
+            }
+        }
+        .collapse {
+            .card {
+                @extend %flexrow;
+                background-color: 1px solid $color2;
+                .ico1{
+                    @extend %flexcol;;
+                    margin: 0 7px;
+                    i {
+                        width: 120px;
+                        height: 85px;
+                        font-size: 45px;
+                        border-radius: 10px;
+                        border: 1px solid $color7;
+                        background-color: $color6;
+                        color: $color2;
+                        @extend %flexrow;
+                    }
+                    span {
+                        color: $color2;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

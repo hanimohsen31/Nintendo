@@ -1,0 +1,86 @@
+@import '../helpers/global';
+.swiper-105{
+    .head101{
+        margin: 40px auto;
+        h3{
+            font-size: 25px;
+            font-weight: bold;
+            color: $color2;
+        }
+
+    }
+    .container-fluid{
+        .swiper-container{
+            width: 100%;
+            height: 100%;
+            .swiper-wrapper{
+                .swiper-slide{
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    .box {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 25px;
+                        a.box-img{
+                            img {
+                                border-radius: 10px;
+                            }
+                        }
+                        .text-content {
+                            text-align: left;
+                            color: $color2;
+                            h6{
+                                color: $color2;
+                                margin: 20px auto;
+                            }
+                            a.ava {
+                                &:hover{
+                                    text-decoration: none !important;
+                                }
+                                h3 {
+                                    color: $color2;
+                                    text-decoration: none;
+                                    margin: 15px 5px;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                }
+                            }
+                            h4{
+                                color: $color2;
+                                margin: 15px 5px;
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+                            p{
+                                border-bottom: 2px solid $color1;
+                                width: fit-content;
+                                margin: 0 5px;
+                                font-weight: 600;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-button-next,
+            .swiper-button-prev{
+                color: $color2;
+                font-weight: 900;
+            }
+        }
+    }
+}
